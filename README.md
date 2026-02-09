@@ -8,24 +8,30 @@
 ## Environment
 ```bash
 cp .env.example .env
+# Edit .env to match your credentials
 ```
 
 ## Running service
 
-### Database
-```bash
-docker compose -f db.yaml up -d
-```
+1. **Enter Project Directory** & **Checkout Branch**:
+   ```bash
+   cd 68-S2-cybersec
+   git checkout develop
+   ```
 
-### Admin
-```bash
-docker compose -f admin.yaml up -d
-```
+2. **Run Services**:
 
-### Application
-```bash
-docker compose -f app.yaml up -d
-```
+   ### Database
+   ```bash
+   docker compose -f db.yaml up -d
+   ```
 
-## About
-Repository for CyberSecurity Class by Aj.prawee
+   ### Admin
+   ```bash
+   docker compose -f admin.yaml up -d
+   ```
+
+   ### Application
+   ```bash
+   docker compose -f app.yaml up -d
+   ```
